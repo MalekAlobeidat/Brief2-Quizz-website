@@ -1,12 +1,12 @@
 
-// if (!isAuthenticated()) {
-//     window.location.href = "../login/login.html";
-// } 
-// function isAuthenticated() {
-//     // Implement your authentication logic here
-//     const isLoggedIn = localStorage.getItem("isLoggedIn");
-//     return !!isLoggedIn;
-// }
+if (!isAuthenticated()) {
+    window.location.href = "../login/login.html";
+} 
+function isAuthenticated() {
+    // Implement your authentication logic here
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    return !!isLoggedIn;
+}
 const html = [
 {
 question: "What does HTML stand for?",
@@ -128,7 +128,7 @@ if (localStorage.getItem("quizName") == "CSS") {
 console.log(css);
 questions = css;
 }
-if (localStorage.getItem("quizName") == "Java Script") {
+if (localStorage.getItem("quizName") == "JavaScript") {
 console.log(JavaScript);
 questions = JavaScript;
 }
@@ -149,11 +149,11 @@ const timerElement = document.getElementById("timer");
 
 let currentQuestion = 0;
 let userAnswers = new Array(questions.length);
-let timerSeconds = 15;
+let timerSeconds = 30;
 let timerInterval;
 
 function showQuestion(index) {
-timerSeconds = 15; // Reset timer for each question
+timerSeconds = 30; // Reset timer for each question
 updateTimer();
 clearInterval(timerInterval);
 timerInterval = setInterval(updateTimer, 1000);
