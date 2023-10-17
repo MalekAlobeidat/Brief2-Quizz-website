@@ -15,6 +15,9 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
+.right-image{
+width: 600px;
+}
 
 #head {
     display: flex;
@@ -55,6 +58,7 @@ body {
     margin: 0;
     border-top: 2px solid rgb(204, 180, 180);
 }
+
 
 .button-17 {
     background: white;
