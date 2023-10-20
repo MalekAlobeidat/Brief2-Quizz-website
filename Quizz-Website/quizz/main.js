@@ -236,6 +236,7 @@ if (timerSeconds === 0) {
 timerSeconds--;
 }
 
+
 showQuestion(currentQuestion);
 loadUserAnswers();
 

@@ -31,3 +31,8 @@ const quizNameElement = document.getElementById("quizName");
 if (quizNameElement) {
     quizNameElement.textContent = `Quiz Name: ${quizName}`;
 }
+function logout() {
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("name");
+    window.location.href = "../homepage.html";
+  }

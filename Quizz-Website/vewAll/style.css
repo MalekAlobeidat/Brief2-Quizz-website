@@ -8,7 +8,8 @@
         justify-content: center;
         margin-bottom: 2.5%;
     }
-
+    #container{
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;    }
     .last-element{
         display: flex;
         justify-content: space-around;
@@ -224,7 +225,32 @@
          .footer-menu ul li a:hover{
           color: #27bcda;
          }
-         
+        .left-container{
+            width: 20%;
+        }
+        .left-container img{
+            max-width: 100%;
+        }
+        .left-container h2{
+            padding: 15px;
+        }
+        .left-container h3{
+            padding-bottom: 30px;
+        }
+        .left-bottom{
+            padding: 15px;
+
+        }
+
+        @media (max-width:1024px) {
+            .content-body{
+                flex-direction: column-reverse;
+            }
+            .left-container{
+                width: 50%;
+                align-self: center;
+            }
+        }
          @media (max-width:510px) {
          .footer-menu ul{
           display: flex;

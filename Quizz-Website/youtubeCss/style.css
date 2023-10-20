@@ -16,7 +16,13 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
             overflow: hidden;
         }
-
+        .navbar a {
+            font-size: 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: black;
+            margin-right: 30px;
+        }
         #head {
             display: flex;
             flex-direction: column;
@@ -29,6 +35,7 @@
             font-size: 5rem;
             border-bottom: 2px solid rgb(204, 180, 180);
             color: royalblue;
+
         }
         .fa-brands.fab.fa-size {
             font-weight: 400;
@@ -101,7 +108,18 @@
             width: 560px;
             height: 315px;
         }
+        @media (max-width:445px) {
 
+            .navbar{
+                flex-direction: column;
+                align-items: center;
+            }
+            div#links.links{
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+            }
+        }
         @media (max-width: 390px) {
 
 
@@ -114,4 +132,3 @@
                 height: 200px;
             }
         }
-   

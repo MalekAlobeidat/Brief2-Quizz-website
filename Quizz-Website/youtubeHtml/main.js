@@ -21,3 +21,24 @@ for (let i = 0, len = iframes.length; i < len; i++) {
 loadVideo(iframes[i]);
 }
 
+const isLoggedIn = localStorage.getItem("isLoggedIn");
+const loginButtons = document.getElementById("links");
+const logoutButton = document.getElementById("logout-button");
+
+if (isLoggedIn) {
+  loginButtons.style.display = "none";
+  logoutButton.style.display = "flex";
+}
+else {
+  loginButtons.style.display = "flex";
+  logoutButton.style.display = "none";
+}
+
+function logout() {
+  localStorage.removeItem("isLoggedIn");
+  localStorage.removeItem("name");
+  window.location.href = "../homepage.html";
+}
+
+
+

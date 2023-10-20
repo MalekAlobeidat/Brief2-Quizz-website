@@ -12,7 +12,6 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 320px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -23,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    height: 80vh;
 }
 #login-container{
     display: flex;   
@@ -46,14 +45,13 @@ label {
     font-size: 14px;
     margin-bottom: 5px;
 }
-
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
+    input {
+        width: 358px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
 
 .signup-button {
     border: none;
@@ -91,3 +89,8 @@ form{
     justify-content: space-around;
     height: 450px;
 }
+@media only screen and (max-width: 425px) {
+    input{
+        width: 100%;
+    }
+  }

@@ -2,7 +2,9 @@
     body {
       background-color: #f7f7f7;
     }
-
+    html {
+      scroll-behavior: smooth;
+    }
     * {
       box-sizing: border-box;
       margin: 0;
@@ -128,7 +130,7 @@
     }
 
     .imgBackgorund {
-      width: 100vw;
+      /* width: 100vw; */
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -391,12 +393,13 @@
       color: #B7B700;
     }
 
-    .second-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+    .second-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 150px 0px;
+  }
 
     .second-h {
       font-size: 25px;
@@ -414,10 +417,14 @@
 
     .numbers div {
       display: flex;
-      width: 33%;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+          width: 310px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;    
+               padding: 10px;
+          margin: 1%;
+          border-radius: 10px;
     }
 
     .numbers div h2 {
@@ -640,6 +647,7 @@
       .buttons {
         flex-direction: column;
         gap: 10px;
+        width: 50%;
       }
 
       .numbers div {
@@ -687,6 +695,5 @@
         margin-top: 25px;
         font-weight: bolder;
       }
-
 
     }

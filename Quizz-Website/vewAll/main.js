@@ -187,7 +187,7 @@ const html = [
     const result= document.getElementById("result");
     correctLabels.forEach(label => {
         label.classList.add('selected');
-    if(score>3){
+    if(score>=3){
         container.style.backgroundColor="#fff";
         result.classList.add("result-pass");
  
@@ -200,3 +200,8 @@ const html = [
         
     }
     });
+    function logout() {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("name");
+        window.location.href = "../homepage.html";
+      }

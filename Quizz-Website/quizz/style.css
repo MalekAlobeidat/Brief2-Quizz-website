@@ -1,12 +1,12 @@
 
-body {
+.content-body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #b1b1b1;
+    height: 75vh;
+    background-color: #f4f4f4;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "poppins";
 }
 
 form {
